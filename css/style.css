@@ -1,38 +1,25 @@
     body {
-
-      background-color: gray;
+      background-color: #EEE;
       background-attachment: scroll;
     }
 
     .header {
       background: url(https://peters365photos.files.wordpress.com/2012/03/300305.jpg);
-      height:500px;
+      height: 500px;
       width: auto;
     }
 
-    .bottomleft {
-      position: absolute;
-      bottom: 47px;
-      left: 2px;
-
-      font-size: 18px;
-      width: 200px;
-      height: 70px;
-      background-color: #f1f1f1;
-      text-align: center;
-      -ms-transform: rotate(30deg);
-      /* IE 9 */
-      -webkit-transform: rotate(30deg);
-      /* Safari 3-8 */
-      transform: rotate(30deg);
+    .header img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border-radius: 50%;
     }
 
-
-    .bottomright {
+    .header .upperleft {
       position: absolute;
-      bottom: 47px;
-      right: 2px;
-      font-size: 18px;
+      top: 47px;
+      left: 2px;
       font-size: 18px;
       width: 200px;
       height: 70px;
@@ -45,8 +32,7 @@
       transform: rotate(-30deg);
     }
 
-
-    .upperright {
+    .header .upperright {
       position: absolute;
       top: 47px;
       right: 2px;
@@ -62,11 +48,30 @@
       transform: rotate(30deg);
     }
 
+    .header .bottomleft {
+      position: relative;
+      bottom: 0;
+      left: 0;
 
-    .upperleft {
-      position: absolute;
-      top: 47px;
+      bottom: 47px;
       left: 2px;
+
+      font-size: 18px;
+      width: 200px;
+      height: 70px;
+      background-color: #f1f1f1;
+      text-align: center;
+      -ms-transform: rotate(30deg);
+      /* IE 9 */
+      -webkit-transform: rotate(30deg);
+      /* Safari 3-8 */
+      transform: rotate(30deg);
+    }
+
+    .header .bottomright {
+      position: absolute;
+      bottom: 47px;
+      right: 2px;
       font-size: 18px;
       width: 200px;
       height: 70px;
@@ -77,24 +82,16 @@
       -webkit-transform: rotate(-30deg);
       /* Safari 3-8 */
       transform: rotate(-30deg);
-    }    
-
-    p {
-      font-size: 18px;
-
-      text-align: justify;
-      text-justify: inter-word;
-      text-align: center;
-      color: white;
     }
 
     li {
-      text-align: center;
-      color: white;
+      text-align: left;
     }
 
     .container {
+      margin: 20px;
       position: relative;
+      clear: both;
     }
 
     .bk {
@@ -105,27 +102,75 @@
       /* For IE8 and earlier */
     }
 
-    .hh {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: .9;
-      border-radius: 50%;
-    }
-
     .nbprize {
       width: 20%;
-      height: 250px;
-      position: absolute;
-      top: 800px;
-      left: 0px;
-      z-index: -1;
+      height: auto;
+      float: right;
       border-radius: 50%;
-      ;
     }
 
     .bigText {
       text-align: center;
       font-size: 30px;
+    }
+
+    blockquote {
+      display: block;
+      width: 70%;
+      background: #fff;
+      padding: 15px 20px 15px 45px;
+      margin: 0 0 20px;
+      position: relative;
+
+      /*Font*/
+      font-family: Georgia, serif;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #666;
+      text-align: justify;
+
+      /*Borders - (Optional)*/
+      border-left: 15px solid #DDD;
+      border-right: 2px solid #DDD;
+
+      /*Box Shadow - (Optional)*/
+      -moz-box-shadow: 2px 2px 15px #ccc;
+      -webkit-box-shadow: 2px 2px 15px #ccc;
+      box-shadow: 2px 2px 15px #ccc;
+    }
+
+    blockquote::before {
+      content: "\201C";
+      /*Unicode for Left Double Quote*/
+      /*Font*/
+      font-family: Georgia, serif;
+      font-size: 60px;
+      font-weight: bold;
+      color: #999;
+
+      /*Positioning*/
+      position: absolute;
+      left: 10px;
+      top: 5px;
+    }
+
+    blockquote::after {
+      /*Reset to make sure*/
+      content: "";
+    }
+
+    blockquote a {
+      text-decoration: none;
+      background: #eee;
+      cursor: pointer;
+      padding: 0 3px;
+      color: #c76c0c;
+    }
+
+    blockquote a:hover {
+      color: #666;
+    }
+
+    blockquote em {
+      font-style: italic;
     }

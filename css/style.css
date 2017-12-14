@@ -70,7 +70,7 @@
 
     .header .bottomright {
       position: absolute;
-      bottom: 47px;
+      top: 410px;
       right: 2px;
       font-size: 18px;
       width: 200px;

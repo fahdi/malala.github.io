@@ -18,7 +18,7 @@
 
     .header .upperleft {
       position: absolute;
-      top: 47px;
+      top: 63px;
       left: 2px;
       font-size: 18px;
       width: 200px;
@@ -34,7 +34,7 @@
 
     .header .upperright {
       position: absolute;
-      top: 47px;
+      top: 63px;
       right: 2px;
       font-size: 18px;
       width: 200px;
@@ -50,9 +50,7 @@
 
     .header .bottomleft {
       position: relative;
-      bottom: 0;
-      left: 0;
-
+      
       bottom: 47px;
       left: 2px;
 
@@ -70,7 +68,7 @@
 
     .header .bottomright {
       position: absolute;
-      bottom: 47px;
+      bottom: 1px;
       right: 2px;
       font-size: 18px;
       width: 200px;

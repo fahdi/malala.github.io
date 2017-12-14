@@ -49,9 +49,9 @@
     }
 
     .header .bottomleft {
-      position: relative;
+     position: absolute;
       
-      bottom: 47px;
+      bottom: 1px;
       left: 2px;
 
       font-size: 18px;
